@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(48, 16, 255, 1) 0%,
+    rgba(100, 115, 255, 1) 100%);
+  font-family: 'Quicksand', sans-serif;
+}
+
+.App {
+  /* text-align: center; */
+  /* box-shadow: 2px -3px 20px 11px rgba(245,235,235,0.75);
+  -webkit-box-shadow: 2px -3px 20px 11px rgba(245,235,235,0.75);
+  -moz-box-shadow: 2px -3px 20px 11px rgba(245,235,235,0.75); */
+  background-color: #161a2b;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.wrapper {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #5d0cff;
+  border-radius: 8px;
+  background: transparent;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2px solid #5d0cff;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #e2e2e2;
+}
+
+.add {
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  font-size: 18px;
+  margin-left: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.items {
+  width: 350px;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+  color: #fff;
+}
+
+.items:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+.items:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 135, 1) 100%
+  );
+}
+
+.items:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+}
+
+p {
+  word-break: break-all;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit {
+  background: linear-gradient(
+    90deg,
+    rgb(77, 116, 161) 0%,
+    rgb(17, 72, 144) 100%
+  );
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.delete {
+  background: linear-gradient(
+    90deg,
+    rgb(95, 14, 109) 0%,
+    rgb(207, 37, 11) 100%
+  );
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  App {
+    width: 300px;
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .wrapper {
+    width: 280px;
+  }
+
+  .todo-wrapper {
+    width: 90%;
+  }
+
+  input {
+    font-size: 16px;
+    padding: 7px 5px;
+  }
+
+  .items {
+    width: 250px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
